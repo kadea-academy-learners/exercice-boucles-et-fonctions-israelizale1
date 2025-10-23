@@ -12,8 +12,16 @@
 */
 function maxDeTrois(a, b, c) {
   // Placeholder neutre : retourne null pour indiquer non-implémentation
-  return null;
+  
+  if (typeof a !== "number" || typeof b !== "number" || typeof c !== "number") {
+   return null;
+  } else if (a==b && b==c){
+    return "Les trois nombres sont égaux";
+  } else {
+    return Math.max (a,b,c);
+  }
 }
+console.log (maxDeTrois(3,3,3));
 
 // Ne pas modifier la ligne ci-dessous
 module.exports = { maxDeTrois };

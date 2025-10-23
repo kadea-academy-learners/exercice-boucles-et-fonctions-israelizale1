@@ -12,6 +12,10 @@
 function somme(n) {
   // Exercice non implémenté : retourner la somme de 1 à n
   // Placeholder neutre : retourne 0 pour indiquer non-implémentation
+  function somme(n) {
+  if (typeof n !== 'number' || n < 1 || !Number.isInteger(n)) return 0;
+  return (n * (n + 1)) / 2;
+}
   return 0;
 }
 
